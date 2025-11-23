@@ -4,7 +4,7 @@ public class student {
     private int a = 10;
     protected int b = 20;
     public int c = 30;
-    int d = 40;
+    int d = 40; // default -> accessible in same package
 
     public void display() {
 
