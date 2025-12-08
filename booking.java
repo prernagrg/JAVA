@@ -1,6 +1,4 @@
-package booking;
-
-public class bookmovie {
+class bookmovie {
     int total_seats = 9;
 
     public synchronized void bookSeat(int seats) {
