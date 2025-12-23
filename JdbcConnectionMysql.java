@@ -1,4 +1,4 @@
-import java.lang.*;
+
 import java.sql.*;
 
 public class JdbcConnectionMysql {
@@ -9,13 +9,13 @@ public class JdbcConnectionMysql {
 
         // Create connection
         Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/student+", "root", "");
+                "jdbc:mysql://localhost:3306/student", "root", "");
 
         // Create statement
         Statement stmt = con.createStatement();
 
         // Correct SQL query
-        String student = "CREATE TABLE student (" +
+        String student = "CREATE TABLE student1 (" +
                 "stud_id INT, " +
                 "stud_name VARCHAR(20), " +
                 "stud_address VARCHAR(30)," + "roll_no INT)";
@@ -26,7 +26,6 @@ public class JdbcConnectionMysql {
         // Close resources
         stmt.close();
         con.close();
-
         System.out.println("Table created successfully");
     }
 }
